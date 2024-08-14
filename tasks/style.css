@@ -377,6 +377,24 @@ a h6{
     background-size: 100% 100%;
 }
 
+.img5{
+    background-image: url(img5.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.img6{
+    background-image: url(img6.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.img7{
+    background-image: url(img7.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 .tag{
     width: 51px;
     height: 24px;
