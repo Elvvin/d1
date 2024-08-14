@@ -3,12 +3,23 @@ body{
     padding: 0px;
     border: 0;
     background-color: black;
+    border-spacing: 0px;
+}
+
+ul{
+    margin: 0px;
 }
 
 .menu{
-    height: 100px;
+    height: 15%;
     width: 100%;
     font: 20px bold tahoma;
     color: white;
     background-color: azure;
+}
+
+.main{
+    height: 85%;
+    width: 100%;
+    background-color: bisque;
 }
