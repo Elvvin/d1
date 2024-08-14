@@ -1,3 +1,14 @@
-.text1{
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    background-color: black;
+}
+
+.menu{
+    height: 100px;
+    width: 100%;
     font: 20px bold tahoma;
+    color: white;
+    background-color: azure;
 }
