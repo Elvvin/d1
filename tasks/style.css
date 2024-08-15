@@ -266,10 +266,22 @@ body{
 }
 
 a h6{
-    margin-top: 40px;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: -10px;
     color:#23A6F0;
     font-size: 14px;
     font-family: tahoma;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.7s;
+    transition-delay: 0.5s;
+}
+
+.m-column h6:hover{
+    background-color: #23A6F0;
+    color: white;
 }
 
 .m-column2{
@@ -523,14 +535,4 @@ a h6{
 
 button:hover{
     cursor: pointer;
-}
-
-@media screen and (max-width:600px){
-    .desktop{
-        display: none;
-    }
-
-    .mobile{
-        display: block;
-    }
 }
