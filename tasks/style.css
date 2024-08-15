@@ -277,6 +277,7 @@ a h6{
     line-height: 40px;
     transition: 0.7s;
     transition-delay: 0.5s;
+    border-radius: 10px;
 }
 
 .m-column h6:hover{
