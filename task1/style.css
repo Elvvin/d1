@@ -549,3 +549,240 @@ a h6{
 button:hover{
     cursor: pointer;
 }
+
+.about{
+    width: 100%;
+    max-width: 1440px;
+    height: 865px;
+}
+
+.texts{
+    width: 691px;
+    height: 134px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.about .texts h6{
+    font-size: 14px;
+    color: #23A6F0;
+    font-family: tahoma;
+    font-weight: 700;
+    margin: 0;
+    translate: 0 3px;
+}
+
+.about .texts h2{
+    font-size: 40px;
+    color:#252B42;
+    font-family: tahoma;
+    font-weight: 700;
+    margin: 0;
+}
+
+.about .texts p{
+    font-size: 14px;
+    color:#737373;
+    font-family: tahoma;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 8px;
+}
+
+.about .row{
+    width: 1050px;
+    height: 378px;
+    margin-top: 350px;
+}
+
+.about .row .column{
+    width: 508px;
+    height: 378px;
+}
+
+.about .row .column h6{
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: 400;
+    color: #737373;
+    text-align: center;
+    line-height: 20px;
+}
+
+.about .row .column h5{
+    font-family: tahoma;
+    font-size: 16px;
+    font-weight: 700;
+    color: #252B42;
+    text-align: center;
+    margin-top: 0;
+}
+
+.about .row .column h6:last-child{
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: 700;
+    color: #737373;
+    text-align: center;
+    line-height: 20px;
+    margin-top: -15px;
+}
+
+.sub{
+    width: 100%;
+    max-width: 1440px;
+    height: 594px;
+}
+
+.sub .texts{
+    width: 691px;
+    height: 134px;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 150px;
+}
+
+.sub .texts h6{
+    font-size: 14px;
+    color: #23A6F0;
+    font-family: tahoma;
+    font-weight: 700;
+    margin: 0;
+    translate: 0 3px;
+    text-align: center;
+}
+
+.sub .texts h2{
+    font-size: 40px;
+    color:#252B42;
+    font-family: tahoma;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+
+.sub .texts p{
+    font-size: 14px;
+    color:#737373;
+    font-family: tahoma;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.sub form{
+    margin-top: 360px;
+    margin-left: 350px;
+    position: absolute;
+}
+
+.sub #email{
+    width: 570px;
+    height: 58px;
+    border: 1px solid #E6E6E6;
+    padding-left: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #F9F9F9;
+}
+
+.sub #submit{
+    width: 117px;
+    height: 62px;
+    margin-left: -5px;
+    background-color: #23A6F0;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #E6E6E6;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sub #email:focus{
+    border: 1px solid #F9F9F9;
+    box-shadow: 0 0 3px #F9F9F9;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.foot{
+    width: 100%;
+    max-width: 1440px;
+    height: 414px;
+}
+
+.up{
+    width: 100%;
+    max-width: 1440px;
+    height: 338px;
+    background-color: #252B42;
+}
+
+.up .row{
+    width: 1046px;
+    height: 178px;
+    margin-top: 85px;
+    margin-left: 175px;
+}
+
+.up .row .column{
+    width: 241px;
+    height: 178px;
+    background-color: #252B42;
+}
+
+.up .row .column h3{
+    font-family: tahoma;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFF;
+    margin: 0;
+}
+
+.up .row .column p{
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFF;
+    margin: 0;
+    line-height: 20px;
+}
+
+.up .row .column ul{
+    list-style-type: none;
+    margin-left: -40px;
+    margin-top: -2px;
+}
+
+.up .row .column li{
+    padding-bottom: 5px;
+}
+
+.up .row .column ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: tahoma;
+}
+
+.down{
+    width: 100%;
+    max-width: 1440px;
+    height: 76px;
+    background-color: #FAFAFA;
+}
+
+.down h6{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: tahoma;
+    text-align: center;
+    margin: 0;
+    translate: 0 30px;
+    color: #737373;
+}
