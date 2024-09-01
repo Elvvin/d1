@@ -176,4 +176,4 @@
 // console.log(isPalindrome(str1)); //true
 // console.log(isPalindrome(str2)); //true
 // console.log(isPalindrome(str3)); //true
-// console.log(isPalindrome(str4)); //false
+// console.log(isPalindrome(str4)); //falses

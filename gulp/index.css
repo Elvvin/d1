@@ -1,0 +1,33 @@
+.hello-primary {
+  color: #3498DB;
+}
+
+.hello-secondary {
+  color: #2ECC71;
+}
+
+.hello-tertiary {
+  color: #E74C3C;
+}
+
+.hello-background {
+  color: #ECF0F1;
+}
+
+.hello-text {
+  color: #2C3E50;
+}
+
+.hello-muted-text {
+  color: #95A5A6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hello {
+  background-color: yellow;
+  color: #3498DB;
+}/*# sourceMappingURL=index.css.map */

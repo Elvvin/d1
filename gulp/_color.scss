@@ -1,0 +1,14 @@
+$color-palette: (
+    'primary': $primary-color,
+    'secondary': $secondary-color,
+    'tertiary': $tertiary-color,
+    'background': $background-color,
+    'text': $text-color,
+    'muted-text': $muted-text-color,
+);
+
+@each $key, $value in $color-palette{
+    .hello-#{$key} {
+        color: $value;
+    }
+}
