@@ -26,7 +26,7 @@
 // function bubbleSort(arr) {
 //     let k = arr.length
 
-//     for(let i = 0; i < k - 1; i++){
+//     for(let i = 0; i < k; i++){
 //         for(let j = 0; j < k - 1; j++){
 //             if(arr[j] > arr[j + 1]){
 //                 [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
@@ -55,7 +55,7 @@
 //     return arr;
 // }
 
-// const myArray = ["banana", "apple", "cherry", "date"];
+// const myArray = ["banana", "apple" ,"cherry", "Date"];
 // const sortedArray = bubbleSort(myArray);
 // console.log(sortedArray);
 
