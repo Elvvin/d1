@@ -43,57 +43,69 @@
 
 //! task 3
 
-// var arr1 = [-7, -71, 66, 11, 3, 8, 67];
+// var arr2 = [1, 6, 0, 5, 3, 8, 16];
 
-// function secondSmallestElement(arr1) {
-//     arr1.sort((a, b) => a - b);
-//     return arr1[1];
+// function secondSmallestElement(arr) {
+//     let [smallest, secondSmallest] = [Infinity, Infinity];
+//     for (let num of arr) {
+//         if (num < smallest) [secondSmallest, smallest] = [smallest, num];
+//         else if (num < secondSmallest && num > smallest) secondSmallest = num;
+//     }
+//     return secondSmallest;
 // }
 
-// console.log(secondSmallestElement(arr1)); // -7
+// console.log(secondSmallestElement(arr2)); // 1
 
-// function secondSmallestElement(arr1) {
-//     arr1.sort((a, b) => a + b);
-//     return arr1[1];
-// }
-
-// console.log(secondSmallestElement(arr1)); // 66
-
-// var arr2 = [1, 6, 0, 5, 3, 8, 16]; // 0 1 3 5 6 8 16
-
-// function secondBiggestElement(arr2) {
-//     arr2.sort((a, b) => b - a);
-//     return arr2[1];
+// function secondBiggestElement(arr) {
+//     let [largest, secondLargest] = [-Infinity, -Infinity];
+//     for (let num of arr) {
+//         if (num > largest) [secondLargest, largest] = [largest, num];
+//         else if (num > secondLargest && num < largest) secondLargest = num;
+//     }
+//     return secondLargest;
 // }
 
 // console.log(secondBiggestElement(arr2)); // 8
 
-// console.log(Math.min(...arr2));
+// function findMin(arr) {
+//     let min = arr[0];
+//     for (let num of arr) if (num < min) min = num;
+//     return min;
+// }
+
+// console.log(findMin(arr2)); // 0
+
 
 //! task 4
 
 // const array = [1, 2, -5, 8, -3, 9, -7];
 
-// Müsbət və mənfi ədədləri toplamaq üçün dəyişənlər
 // let positiveSum = 0;
 // let negativeSum = 0;
 
-// array.forEach(number => {
-//     if (number > 0) {
-//     positiveSum += number;
-//     } else if (number < 0) {
-//     negativeSum += number;
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] > 0) {
+//         positiveSum += array[i];
+//     } else if (array[i] < 0) {
+//         negativeSum += array[i];
 //     }
-// });
+// }
 
 // console.log(`Müsbət toplam: ${positiveSum}`);
 // console.log(`Mənfi toplam: ${negativeSum}`);
 
+
 //! task 5
 
 // function filterArray(array, limit) {
-//     const result = array.filter(number => number > limit);
-    
+//     const result = [];
+
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] > limit) {
+//             result.push(array[i]);
+//         }
+//     }
+
 //     console.log(result);
 // }
 
@@ -108,20 +120,29 @@
 //! task 6
 
 // function uniqueElements(array) {
-//     const uniqueSet = new Set(array.map(item => String(item)));
+//     const uniqueArray = [];
+//     const seen = {};
 
-//     const uniqueArray = Array.from(uniqueSet).map(item => {
-//         if (item === 'true') return true;
-//         if (item === 'false') return false;
-//         if (!isNaN(item)) return Number(item);
-//         return item;
-//     });
+//     for (let i = 0; i < array.length; i++) {
+//         let item = array[i];
+//         let key = String(item);
+
+//         if (!seen[key]) {
+//             seen[key] = true;
+
+//             if (key === 'true') item = true;
+//             else if (key === 'false') item = false;
+//             else if (!isNaN(key)) item = Number(key);
+
+//             uniqueArray.push(item);
+//         }
+//     }
 
 //     console.log(uniqueArray.join(' '));
 // }
 
 // const arr1 = [1, "salam", 1, true, true, false, false, false, 5, "5"]; // 1 salam true false 5
-// const arr2 = [2, "class", 1, true, "class", 16, 17, 18,  "17"]; // 2 class 1 true 16 17 18
+// const arr2 = [2, "class", 1, true, "class", 16, 17, 18, "17"]; // 2 class 1 true 16 17 18
 // uniqueElements(arr1);
 // uniqueElements(arr2);
 
