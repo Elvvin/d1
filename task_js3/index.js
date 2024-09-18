@@ -97,4 +97,14 @@
 //     return Math.round(num);
 // }
 
-// console.log(roundNumber(4.574)); // 5
+// console.log(roundNumber(4.574)); // 5n
+
+var x = 5; 
+var y = 6; // y = 6
+
+if (x > y){
+    console.log("5 böyükdür 6dan")
+}
+else if(x < y){
+    return console.log("true");
+}
