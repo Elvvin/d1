@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kart Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Kart Oyunu</h1>
+        <div class="stats">
+            <span>Vaxt: <span id="time">00:00</span></span>
+            <span>Seçim sayı: <span id="moves">0</span></span>
+        </div>
+        <div class="grid-container" id="game-board">
+        </div>
+        <button id="restart">Yenidən başla</button>
+    </div>
+    <audio id="match-sound" src="sounds/match.wav"></audio>
+    <audio id="no-match-sound" src="sounds/no-match.wav"></audio>
+    <audio id="gameover-sound" src="sounds/gameover.wav"></audio>
+    <script src="index.js"></script>
+</body>
+</html>

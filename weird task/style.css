@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+.boxbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-family: tahoma;
+    font-weight: 600;
+    line-height: 190px;
+    color:rebeccapurple;
+}
