@@ -1,0 +1,53 @@
+//! Document callable vs Query selector
+
+Document callable - HTMLCollection qaytarır və canlı bir list olaraq işləyir yəni DOM-da dəyişiklik olduqda avtomatik yenilənir. Daha məhdud seçim imkanlarına sahibdir.
+
+Query selector - Nodelist qaytarır və statik bir list olaraq işləyir yəni ilk dəfə seçdikdən sonra DOM-da olan dəyişikliklər bu Nodelist-ə təsir etmir. Daha mürəkkəb və spesifik seçimlər etmək mümkündür.
+
+Sources:
+1)https://www.reddit.com/r/learnjavascript/comments/ozmlr0/any_reason_to_use_any_other_document_selector/
+2) https://stackoverflow.com/questions/18247289/what-is-the-difference-between-queryselectorall-and-getelementsbytagname
+3) https://teamtreehouse.com/community/getelementsbyclassname-versus-queryselector
+
+//! NodeList vs HTMLCollection
+
+NodeList - DOM-da seçilmiş nodes-ların siyahısını təmsil edir. forEach metodu ilə iterasiya etmək mümkündür. Statik kolleksiyadır (əksər hallarda) yəni DOM-da edilən dəyişikliklər kolleksiyaya avtomatik əlavə olunmur.
+
+HTMLCollection - DOM-da seçilmiş HTML elementlərinin canlı siyahısını təmsil edir. item(index) metodu vasitəsilə elementlərə müraciət etmək mümkündür. Canlı kolleksiyadır DOM-da edilən hər hansı dəyişiklik (element əlavə etmək, silmək və s.) avtomatik olaraq HTMLCollection-a əks olunur.
+
+Sources:
+1) https://www.w3schools.com/js/js_htmldom_nodelist.asp#:~:text=An%20HTMLCollection%20is%20a%20collection,accessed%20by%20their%20index%20number.
+2) https://www.freecodecamp.org/news/dom-manipulation-htmlcollection-vs-nodelist/
+3) https://medium.com/@layne_celeste/htmlcollection-vs-nodelist-4b83e3a4fb4b
+
+//! append vs appendChild
+
+append - Birdən çox node qəbul edə bilir, həmçinin string əlavə etməyə də imkan verir. Heç bir dəyər qaytarmır. Yalnız müasir brauzerlərdə dəstəklənir.
+
+appendChild - Yalnız bir node qebul edir və string əlavə etmək mümkün deyildir. Dəyər olaraq əlavə olunan node-u qaytarır. Bütün müasir və köhnə brauzerlərdə dəstəklənir.
+
+Sources:
+1) https://dev.to/ibn_abubakre/append-vs-appendchild-a4m
+2) https://techkluster.com/javascript/append-vs-appendchild/
+
+//! parentNode vs parentElement
+
+parentNode - Mövcud elementin və ya düyünün parent node-unu qaytarır. Hər hansı bir növ node-u qaytara bilər. Mətn node-ları ilə işləyir.
+
+parentElement - Mövcud elementin parent elementini element növündə qaytarır. Yalnız element növündəki parent-ləri qaytarır və əgər parent node-u element deyilsə null qaytarır. Mətn node-ları ilə işləmir, null qaytarır.
+
+Sources:
+1) https://www.geeksforgeeks.org/difference-between-dom-parentnode-and-parentelement-in-javascript/
+2) https://teamtreehouse.com/community/parentnode-vs-parentelement
+3)https://stackoverflow.com/questions/8685739/difference-between-dom-parentnode-and-parentelement
+
+//! childNodes vs children
+
+childNodes - Mövcud elementin bütün child node-larını NodeList şəklində qaytarır. childNodes istifadə edərək mətn node-larını əldə etmək mümkündür. forEach metodunu dəstəkləyir. NodeList qaytarmasına baxmayaraq canlı kolleksiyaya sahibdir yəni DOM-da edilən dəyişikliklər dərhal kolleksiyaya əks olunur. Əlavə olaraq şərh node-larını da əldə etmək mümkündür.
+
+children - Mövcud elementin yalnız element node-larını HTMLCollection şəklində qaytarır. mətn node-larını əldə etmək mümkün deyildir. for metodunu dəstəkləyir və Array.from() metodu ilə iterasiya etmək mümkündür. Canlı kolleksiyaya sahibdir. Şərh node-larını əldə etmək mümkün deyildir.
+
+Sources:
+1) https://stackoverflow.com/questions/7935689/what-is-the-difference-between-children-and-childnodes-in-javascript
+2) https://www.geeksforgeeks.org/what-is-the-difference-between-children-and-childnodes-in-javascript/
+3) https://dev.to/himanshudevgupta/what-is-the-difference-between-children-and-childnodes-pia
