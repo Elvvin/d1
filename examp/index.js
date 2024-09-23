@@ -44,4 +44,3 @@
 // const getMiddleValue = arr => arr[Math.floor(arr.length / 2)];
 
 // console.log(getMiddleValue(numbers));
-
