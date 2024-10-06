@@ -44,3 +44,116 @@
 // const getMiddleValue = arr => arr[Math.floor(arr.length / 2)];
 
 // console.log(getMiddleValue(numbers));
+
+
+// (function checkValue() {
+//     let x = 6;
+//     const myPromise = new Promise(function(resolve, reject) {
+//         if (x == 5) {
+//             resolve("Value is true");
+//         } else {
+//             reject("Value is wrong");
+//         }
+//     });
+
+//     myPromise
+//         .then(result => {
+//             console.log(result)
+//         })
+//         .catch(error => {
+//             console.error(error);
+//         })
+//         .finally(() => {
+//             console.warn("Promise succesfully ended.")
+//         })
+// })();
+
+// function getAllPosts(callback){
+//     fetch("https://jsonplaceholder.typicode.com/posts/")
+//     .then(res => res.json())
+//     .then(data => callback(data?.[0]?.id))
+// }
+
+// function getPostById(id, callback){
+//     fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+//     .then(res => res.json())
+//     .then(data => callback(data?.id, 'comments'))
+// }
+
+// function getPostCommentsById(id, url){
+//     fetch(`https://jsonplaceholder.typicode.com/posts/${id}/${url}`)
+//     .then(res => res.json())
+//     .then(data => console.log(data, 'comments'))
+// }
+
+// getAllPosts((id) => {
+//     getPostById(id, (postId, url) => {
+//         getPostCommentsById(postId, url)
+//     })
+// })
+
+// let inputStr = "Hello World!";
+// let resultStr = "";
+
+// for (let i = inputStr.length - 1; i >= 0; i--) {
+//     let char = inputStr[i];
+//     if (char === 'H' || char === 'W') {
+//         resultStr += char.toLowerCase();
+//     } else {
+//         resultStr += char.toUpperCase();
+//     }
+// }
+
+// console.log(resultStr);
+
+// async function fetchData(url) {
+//     try {
+//         const response = await fetch(url);
+//         if (!response.ok) {
+//             throw new Error('Network response was not ok');
+//         }
+//         const data = await response.json();
+//         return data;
+//     } catch (error) {
+//         console.error('Fetch error:', error);
+//     }
+// }
+
+// function syncFunction() {
+//     fetchData('https://jsonplaceholder.typicode.com/todos/1')
+//         .then(data => {
+//             console.log(data); // Asinxron data burada da işlənir
+//         });
+// }
+
+// syncFunction()
+
+// class crytpo {
+//     constructor(_name, _price){
+//         this.name = _name,
+//         this.price = _price
+//     }
+// }
+
+// const bitcoin = new crytpo("bitcoin", "61000");
+
+// console.log(bitcoin)
+
+let input = "(()())(())"
+let newInput = ""
+
+for (let i = 0; i < input.length; i++) {
+
+    let x = input[i];
+    let y = input[i + 1]
+    if (x === "(" && y === "(") {
+        continue;
+    }
+    else if(x === ")" && y === ")"){
+        continue;
+    }
+
+    newInput += x;
+}
+
+console.log(newInput)

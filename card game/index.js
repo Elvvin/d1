@@ -110,7 +110,6 @@ function checkForMatch() {
     }
 }
 
-
 function resetCards() {
     firstCard = null;
     secondCard = null;
