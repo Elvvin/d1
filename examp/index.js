@@ -139,21 +139,62 @@
 
 // console.log(bitcoin)
 
-let input = "(()())(())"
-let newInput = ""
+// let input = "(()())(())"
+// let newInput = ""
 
-for (let i = 0; i < input.length; i++) {
+// for (let i = 0; i < input.length; i++) {
 
-    let x = input[i];
-    let y = input[i + 1]
-    if (x === "(" && y === "(") {
-        continue;
-    }
-    else if(x === ")" && y === ")"){
-        continue;
-    }
+//     let x = input[i];
+//     let y = input[i + 1]
+//     if (x === "(" && y === "(") {
+//         continue;
+//     }
+//     else if(x === ")" && y === ")"){
+//         continue;
+//     }
 
-    newInput += x;
+//     newInput += x;
+// }
+
+// console.log(newInput)
+
+// function checkAnagram(str1, str2) {
+//     let fix = (str) => str
+//     .toLowerCase()
+//     .replace(/\s+/g, '')
+//     .split('')
+//     .sort()
+//     .join('');
+    
+//     return fix(str1) === fix(str2);
+// }
+
+// console.log(checkAnagram("salam  ", "malas"))
+
+// let str = "Hello World";
+
+// function LengthOfLastWord(word) {
+//     let words = word.split(" ");
+//     return words[words.length - 1].length
+// }
+
+// console.log(LengthOfLastWord(str))
+
+
+// function searchInsert(nums, target) {
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] === target) {
+//             return i;
+//         } else if (nums[i] > target) {
+//             return i;
+//         }
+//     }
+//     return nums.length;
+// }
+
+// let nums = [1, 3, 5, 7];
+// console.log(searchInsert(nums, 6));
+
+function isPowerOfTwo(n){
+    
 }
-
-console.log(newInput)

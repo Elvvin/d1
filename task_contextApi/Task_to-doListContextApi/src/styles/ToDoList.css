@@ -1,0 +1,52 @@
+.todoList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todoList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todoList li {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Liste öğesindeki içeriği ortalar */
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px; /* Liste öğeleri için genişlik belirleyin */
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.completeButton,
+.removeButton {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.completeButton {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.completeButton:hover {
+    background-color: #45a049;
+}
+
+.removeButton {
+    background-color: #f44336;
+    color: white;
+}
+
+.removeButton:hover {
+    background-color: #d32f2f;
+}
