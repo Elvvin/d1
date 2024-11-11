@@ -193,8 +193,33 @@
 // }
 
 // let nums = [1, 3, 5, 7];
-// console.log(searchInsert(nums, 6));
+// console.log(searchInsert(nums, 6));`
 
-function isPowerOfTwo(n){
-    
+// function sum(n){
+//     return n * (n + 1) / 2
+// }
+
+// const timer1 = performance.now()
+
+// sum(10000000000000)
+
+// const timer2 = performance.now()
+
+// console.log(`${timer2 - timer1 / 1000}`)
+
+function reduceUntilOneOrPrime(n) {
+    if (n < 2) return null;
+
+    let reducer = 2;
+    while (reducer <= Math.sqrt(n)) {
+        if (n % reducer === 0) {
+            n = n / reducer;
+        } else {
+            reducer++;
+        }
+    }
+
+    return n;
 }
+
+console.log(reduceUntilOneOrPrime(17));
